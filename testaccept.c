@@ -17,16 +17,7 @@
  *	tcp4       0      0  127.0.0.1.50677        127.0.0.1.12345        FIN_WAIT_2 
  */
 
-#include <sys/socket.h>
-// #include <netinet/in.h>
-#include <arpa/inet.h>
-#include <assert.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <errno.h>
-#include <string.h>
-#include <libgen.h>     /* for basename() */
+#include "head.h"
 
 int main(int argc, char * argv[]){
 	if(argc <= 2){

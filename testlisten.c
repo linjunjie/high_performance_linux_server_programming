@@ -10,17 +10,7 @@
  *
  */
 
-#include <sys/socket.h>
-// #include <netinet/in.h>
-#include <arpa/inet.h>
-#include <signal.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <stdio.h>
-#include <string.h>
-#include <libgen.h>     /* for basename() */
-#include "header.c"
+#include "head.h"
 
 static bool stop = FALSE;
 
@@ -69,7 +59,7 @@ int main(int argc, char *argv[]){
     int sock = socket(PF_INET, SOCK_STREAM, 0);
     assert(sock >= 0);
     
-    /* 创建一个IPv4socket 地址 */
+    /* 创建一个IPv4 socket 地址 */
     struct sockaddr_in address;
 
     /* 地址清零 */
