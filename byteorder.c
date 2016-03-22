@@ -40,5 +40,7 @@ void byteorder(){
 
 int main(){
     byteorder();
+    printf("%ld\n",sizeof(int));
+    printf("%ld\n",sizeof(short));
     return 1;
 }
